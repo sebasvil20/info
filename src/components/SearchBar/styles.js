@@ -28,6 +28,10 @@ export const Input = styled.input`
     border: 0.5px solid #E0E0E0;
     border-radius: 5px 0px 0px 5px;
     box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.08);
+    
+    @media (max-width: 800px){
+        width: 70%;
+    }
 `
 
 export const Button = styled.button`
