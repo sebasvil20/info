@@ -8,7 +8,7 @@ import { WiWindDeg } from 'react-icons/wi';
 
 
 
-export const Weather = ({weather_Time, temperature = 25, weather_Description, wind_Speed, wind_Degree, wind_Direction, presure}) => {
+export const Weather = ({weather_Time, temperature = 20, weather_Description, wind_Speed, wind_Degree, wind_Direction, presure}) => {
     return(
         <WeatherCard>
             <div>

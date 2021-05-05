@@ -1,10 +1,14 @@
-import {MainContainer} from './styles'
+import {MainContainer, SideBar} from './styles'
 import { NewsList } from "../NewsList";
 import { Weather } from '../Weather';
+import { HistoryCard } from '../HistoryCard';
 
 export const MainContent = () => (
     <MainContainer>
         <NewsList />
-        <Weather />
+        <SideBar>
+            <Weather />
+            <HistoryCard />
+        </SideBar>
     </MainContainer>
 )

@@ -10,3 +10,14 @@ export const MainContainer = styled.div`
         width: 100%;
     }
 `
+
+export const SideBar = styled.div`
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    @media (max-width: 1348px){
+        width: 50%;
+        order: -1;
+    }
+`
