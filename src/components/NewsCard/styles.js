@@ -1,4 +1,3 @@
-
 import styled from 'styled-components'
 
 export const NewsContainer = styled.div`
@@ -8,7 +7,6 @@ export const NewsContainer = styled.div`
     max-height: 400px;
     display: flex;
     margin: 20px 0;
-
     
     @media (max-width: 920px){
         width: 100%;
@@ -18,7 +16,6 @@ export const NewsContainer = styled.div`
         justify-content: center;
         align-items: center;
     }
-
     
     @media (max-width: 620px){
         max-height: 550px;
@@ -30,7 +27,6 @@ export const NewsContainer = styled.div`
         height: 600px;
     }
 
-    
     @media (max-width: 410px){
         max-height: 650px;
         height: 650px;
