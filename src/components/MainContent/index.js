@@ -3,12 +3,21 @@ import { NewsList } from "../NewsList";
 import { Weather } from '../Weather';
 import { HistoryCard } from '../HistoryCard';
 
-export const MainContent = () => (
+export const MainContent = ({city, history, setCityToSearch, handleQuery}) => (
     <MainContainer>
-        <NewsList />
+        <NewsList 
+            news = {city.data.news}
+        />
         <SideBar>
-            <Weather />
-            <HistoryCard />
+            <Weather 
+                cityName = {city.data.city_Name}
+                {...city.data.weather}
+            />
+            <HistoryCard 
+                history = {history}
+                setCityToSearch = {setCityToSearch}
+                handleQuery = {handleQuery}
+            />
         </SideBar>
     </MainContainer>
 )

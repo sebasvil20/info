@@ -8,24 +8,24 @@ import { WiWindDeg } from 'react-icons/wi';
 
 
 
-export const Weather = ({weather_Time, temperature = 20, weather_Description, wind_Speed, wind_Degree, wind_Direction, presure}) => {
+export const Weather = ({cityName, weather_Time, temperature = 20, weather_Description, wind_Speed, wind_Degree, wind_Direction, presure}) => {
     return(
         <WeatherCard>
             <div>
-                <Date>4:57pm</Date>
-                <h2>Medellín</h2>
+                <Date>{weather_Time}</Date>
+                <h2>{cityName}</h2>
                 <Temp>
                     {
                         temperature < 5 ? <FaCloudShowersHeavy /> : temperature < 12 ? <FaCloudSunRain /> : temperature < 25 ? <FaCloudSun /> : <FaSun />
                     } {temperature} °C
                 </Temp>
             </div>
-            <Description>Light breeze</Description>
+            <Description>{weather_Description}</Description>
             <SecondContainer>
-                <SubInfo> <AiFillCompass /> NW</SubInfo>
-                <SubInfo> <ImRocket /> 1025hPa</SubInfo>
-                <SubInfo> <IoMdSpeedometer /> 3.15Km/h</SubInfo>
-                <SubInfo> <WiWindDeg /> 360°</SubInfo>
+                <SubInfo> <AiFillCompass /> {wind_Direction}</SubInfo>
+                <SubInfo> <ImRocket /> {presure}hPa</SubInfo>
+                <SubInfo> <IoMdSpeedometer /> {wind_Speed} Km/h</SubInfo>
+                <SubInfo> <WiWindDeg /> {wind_Degree}°</SubInfo>
             </SecondContainer>
         </WeatherCard>
     )
