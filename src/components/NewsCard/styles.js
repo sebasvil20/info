@@ -35,7 +35,8 @@ export const NewsContainer = styled.div`
 
 export const Image = styled.img`
     width: 35%;
-    min-width: 240px;
+    min-width: 250px;
+    max-width: 250px;
     height: 100%;
     min-height: 180px;
     margin-right: 20px;
@@ -43,6 +44,7 @@ export const Image = styled.img`
     @media (max-width: 920px){
         width: 50%;
         max-height: 180px;
+        max-width: 450px;
     }
 `
 

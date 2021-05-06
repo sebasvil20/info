@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const NewsContainer = styled.div`
     background-color: white;
-    width: 65%;
+    width: 75%;
     border-radius: 5px;
     padding: 20px;
     min-width: 900px;
