@@ -10,7 +10,6 @@ export const NewsContainer = styled.div`
     @media (max-width: 1250px){
         width: 100%;
     }
-
     
     @media (max-width: 1100px){
         width: 100%;

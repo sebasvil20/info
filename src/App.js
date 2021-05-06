@@ -6,6 +6,7 @@ import { SearchBar } from "./components/SearchBar";
 
 import axios from 'axios'
 import { Message } from './components/Message';
+import { Footer } from './components/Footer';
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
           <MainContent city={city} history={history} setCityToSearch={setCityToSearch} handleQuery={handleQuery}/> 
           : <Message message={errorMessage} />
       }
+      <Footer />
     </div>
   );
 }
